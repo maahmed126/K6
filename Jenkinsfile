@@ -11,4 +11,9 @@ pipeline {
              }
        
  }
+        post {
+              always {
+              cucumber '**/my_test_result.json'
+        }
+    }
         }
