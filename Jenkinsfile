@@ -2,7 +2,7 @@ pipeline {
         agent any
         
         stages {
-
+             stage('Hello') {
              steps {
                     sh 'mkdir -p k6_results' 
                     sh 'ls'
@@ -17,3 +17,4 @@ pipeline {
         }
     }
         }
+}
