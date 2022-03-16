@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-              sh '''k6 run --out html=my_test_result.html eworks.js'''
+              sh '''k6 run --out json=my_test_result.json eworks.js'''
             }
         }
     }
