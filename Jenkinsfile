@@ -10,9 +10,9 @@
             }
          post {
              always {
-              cucumber fileIncludePattern: '**/my_test_result.json',
+              cucumber fileIncludePattern: '**/*.json',
               buildStatus: "UNSTABLE",
-              jsonReportDirectory: 'target'
+              jsonReportDirectory: 'k6_results'
         }
     }
         }
