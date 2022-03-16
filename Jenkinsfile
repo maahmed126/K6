@@ -12,7 +12,7 @@
              always {
               cucumber fileIncludePattern: '**/my_test_result.json',
               buildStatus: "UNSTABLE",
-              jsonReportDirectory: 'k6_results'
+              jsonReportDirectory: 'target'
         }
     }
         }
